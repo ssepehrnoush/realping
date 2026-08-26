@@ -1,0 +1,188 @@
+{
+  "title": "realping",
+  "font_size": 13,
+  "hold": 3.2,
+  "rows": [
+    {
+      "t": "cmd",
+      "s": "realping example.com --from ir,tr,de,us,in"
+    },
+    {
+      "t": "gap"
+    },
+    {
+      "t": "out",
+      "s": "example.com",
+      "c": "bold"
+    },
+    {
+      "t": "gap"
+    },
+    {
+      "t": "out",
+      "s": "CC  CITY         NETWORK                DNS  TCP  TLS  TTFB  TOTAL",
+      "c": "dim"
+    },
+    {
+      "t": "out",
+      "spans": [
+        [
+          "IN  Mumbai       Oracle                 ",
+          "text"
+        ],
+        [
+          "  6 ",
+          "green"
+        ],
+        [
+          "   2 ",
+          "green"
+        ],
+        [
+          "   8 ",
+          "green"
+        ],
+        [
+          "    7 ",
+          "green"
+        ],
+        [
+          "    24 ",
+          "green"
+        ]
+      ]
+    },
+    {
+      "t": "out",
+      "spans": [
+        [
+          "TR  Istanbul     HUAWEI CLOUDS          ",
+          "text"
+        ],
+        [
+          "  7 ",
+          "green"
+        ],
+        [
+          "   3 ",
+          "green"
+        ],
+        [
+          "  12 ",
+          "green"
+        ],
+        [
+          "   26 ",
+          "green"
+        ],
+        [
+          "    49 ",
+          "green"
+        ]
+      ]
+    },
+    {
+      "t": "out",
+      "spans": [
+        [
+          "US  Buffalo      HostPapa               ",
+          "text"
+        ],
+        [
+          " 63 ",
+          "green"
+        ],
+        [
+          "  13 ",
+          "green"
+        ],
+        [
+          "  29 ",
+          "green"
+        ],
+        [
+          "   36 ",
+          "green"
+        ],
+        [
+          "   142 ",
+          "green"
+        ]
+      ]
+    },
+    {
+      "t": "out",
+      "spans": [
+        [
+          "IR  Tehran       AbrArvan CDN and IaaS  ",
+          "text"
+        ],
+        [
+          "  5 ",
+          "green"
+        ],
+        [
+          "  79 ",
+          "green"
+        ],
+        [
+          "  89 ",
+          "green"
+        ],
+        [
+          "   94 ",
+          "green"
+        ],
+        [
+          "   268 ",
+          "green"
+        ]
+      ]
+    },
+    {
+      "t": "out",
+      "spans": [
+        [
+          "DE  Falkenstein  Hetzner Online         ",
+          "text"
+        ],
+        [
+          "The measurement timed out.",
+          "red"
+        ]
+      ]
+    },
+    {
+      "t": "gap"
+    },
+    {
+      "t": "out",
+      "spans": [
+        [
+          "4/5 probes answered  |  ",
+          "dim"
+        ],
+        [
+          "median TTFB 31ms",
+          "green"
+        ],
+        [
+          "  |  ",
+          "dim"
+        ],
+        [
+          "median total 96ms",
+          "text"
+        ],
+        [
+          "  |  ",
+          "dim"
+        ],
+        [
+          "1 failed",
+          "red"
+        ]
+      ]
+    }
+  ]
+}

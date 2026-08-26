@@ -1,0 +1,50 @@
+{
+  "name": "realping",
+  "version": "0.1.0",
+  "description": "Measure your site's real latency from other countries, including Iran. Measuring from your own machine measures your proxy, your DNS and your nearest CDN edge, not your users.",
+  "keywords": [
+    "latency",
+    "ttfb",
+    "globalping",
+    "performance",
+    "monitoring",
+    "cdn",
+    "network",
+    "ping",
+    "traceroute",
+    "iran",
+    "geo",
+    "web-vitals",
+    "cli",
+    "devtools"
+  ],
+  "license": "MIT",
+  "author": "ssepehrnoush",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "realping": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssepehrnoush/realping.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssepehrnoush/realping/issues"
+  },
+  "homepage": "https://github.com/ssepehrnoush/realping#readme"
+}
