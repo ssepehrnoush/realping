@@ -33,14 +33,16 @@ the [Globalping](https://globalping.io) network. No API key, no account.
 ## Install
 
 ```bash
-npx realping example.com
+npm install -g github:ssepehrnoush/realping
 ```
 
-Or keep it around:
+Then:
 
 ```bash
-npm install -g realping
+realping example.com
 ```
+
+Node 18 or newer. No dependencies, no API key, no account.
 
 ## Use
 

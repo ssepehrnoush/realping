@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      # The suite injects fetch and sleep, so it never touches the network
+      # and never spends Globalping quota.
+      - run: npm test
+      - name: CLI smoke test
+        run: |
+          node src/cli.js --help
+          node src/cli.js 2>/dev/null; test $? -eq 2
