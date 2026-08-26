@@ -23,4 +23,10 @@ jobs:
       - name: CLI smoke test
         run: |
           node src/cli.js --help
-          node src/cli.js 2>/dev/null; test $? -eq 2
+          # No target means usage error, exit code 2. The `|| code=$?` matters:
+          # this step runs under `bash -e`, so a bare failing command would kill
+          # the shell before the assertion ever ran, and the step would fail on
+          # the very behaviour it is trying to prove.
+          code=0
+          node src/cli.js 2>/dev/null || code=$?
+          test "$code" -eq 2
